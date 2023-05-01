@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Order Website</title>
+    <link rel="stylesheet" href="src/index.css">
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="overflow-x-hidden mt-6">
+      <div class="md:ml-28 md:mx-auto flex justify-around">
+        <!-- left part -->
+        <div class="flex gap-8">
+          <!-- logo -->
+          <a href="#">
+            <img src="images/logo-restaurante-x.svg" alt="">
+          </a>
+          <!-- links -->
+          <a href="#" class="text-[18px] font-[500] text-[#696969] hidden md:block">Home</a>
+          <a href="#" class="text-[18px] font-[500] text-[#696969] hidden md:block">About</a>
+          <a href="#" class="text-[18px] font-[500] text-[#696969] hidden md:block">Menu</a>
+          <a href="#" class="text-[18px] font-[500] text-[#696969] hidden md:block">Pages</a>
+          <a href="#" class="text-[18px] font-[500] text-[#696969] hidden md:block">Cart</a>
+        </div>
+
+        <!-- right part -->
+        <div class="gap-7 hidden md:flex">
+          <!-- buttons -->
+          <a href="#"  class="hidden md:flex justify-center items-center">
+            <div class="py-2 px-6 rounded-full border border-slate-300 font-[500] text-[16px]">
+              Order Online
+            </div>
+          </a>
+          <a href="#">  
+            <div class=" py-2 px-6 rounded-full bg-[#ff7629] font-[500] text-[16px] text-white">
+              Reservate
+            </div>
+          </a>
+        </div>
+
+        <!-- hamburger -->
+        <div class="md:hidden block text-black pt-1.5">
+          <i class="fa-solid fa-bars text-[23px]"></i>
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- Homepage -->
+
+    <div class="w-full overflow-x-hidden overflow-y-auto">
+      <div class="flex items-center mt-44 ml-10 mt-8 gap-[150px] relative">
+        <!-- leftpart -->
+        <div class="md:w-[70%] flex flex-col justify-center">
+          <h1 class=" text-[50px] font-[600]">
+            The best place to
+          </h1>
+          <span class="text-[50px] font-[600] text-[#ff7629] mb-5">
+            eat burgers in LA.
+          </span>
+  
+          <p class="w-[85%] md:w-[100%] text-[20px] md:text-[18px] text-[#757575] font-[500] leading-6">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam vitae velit bibendum elementum eget non vivamus volutpat odio cras vestibulum purus aliquam.
+          </p>
+  
+          <!-- button -->
+          <div class="flex gap-6 mt-14 md:mt-5">
+            <a href="#">  
+              <div class=" py-2 px-6 rounded-full bg-[#ff7629] font-[500] text-[16px] text-white">
+                Reservate
+              </div>
+            </a>
+            <a href="#"  class="flex justify-center items-center">
+              <div class="py-2 px-6 rounded-full border border-slate-300 font-[500] text-[16px]">
+                Order Online
+              </div>
+            </a>
+            
+          </div>
+        </div>
+  
+        <!-- rightpart -->
+        <div class="w-[50%] hidden md:block">
+          <div class="w-[480px] h-[480px] bg-[#ff7629] flex justify-start items-center relative -right-40">
+          
+            <img src="images/hero-section-image.jpeg" alt="" class="h-[390px] w-[400px] absolute -left-[35%] z-20 rounded-lg">
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-2-->
+
+    <div class="flex flex-col items-center justify-center mx-auto mt-16 overflow-x-hidden">
+      <h3 class="text-[22px] font-[500]">
+        Order from your favorite app today!
+      </h3>
+      <div class="flex flex-wrap justify-center items-center gap-[55px] mt-5">
+        <img src="images/doordash-logo.svg" alt="">
+        <img src="images/postmates-logo.svg" alt="">
+        <img src="images/rappi-logo.svg" alt="">
+        <img src="images/grubhub-logo.svg" alt="">
+      </div>
+    </div>
+
+    <!-- section-3 -->
+
+    <div class="mx:auto  overflow-x-hidden my-36 flex flex-col justify-center items-center ">
+
+      <h3 class="text-[27px] font-[500]">
+        Browse our menu
+      </h3>
+
+      <!-- cards -->
+    
+      <div class="flex flex-wrap flex-row gap-7 justify-center mt-8">
+        <div class="w-[15rem] flex flex-col justify-center items-center border-[3px] py-8 px-7 rounded-xl border-[#cec9c9]">
+          <img src="images/card1img.svg" alt="">
+          <h4 class=" mt-5 text-[20px] font-[500]">
+            Breakfast
+          </h4>
+          <p class="mt-4 text-[17px] text-[#676767] font-[500]">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam
+          </p>
+          <a href="#" class="mt-4 text-[#ff7629] font-[500]">
+            Explore Menu
+          </a>
+        </div>
+  
+        <div class=" w-[15rem] flex flex-col justify-center items-center border-[3px] py-8 px-7 rounded-xl border-[#cec9c9]">
+          <img src="images/card2img.svg" alt="">
+          <h4 class=" mt-5 text-[20px] font-[500]">
+            Main Dishes
+          </h4>
+          <p class="mt-4 text-[17px] text-[#676767] font-[500]">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam
+          </p>
+          <a href="#" class="mt-4 text-[#ff7629] font-[500]">
+            Explore Menu
+          </a>
+        </div>
+  
+        <div class=" w-[15rem] flex flex-col justify-center items-center border-[3px] py-8 px-7 rounded-xl border-[#cec9c9]">
+          <img src="images/card3img.svg" alt="">
+          <h4 class=" mt-5 text-[20px] font-[500]">
+            Drinks
+          </h4>
+          <p class="mt-4 text-[17px] text-[#676767] font-[500]">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam
+          </p>
+          <a href="#" class="mt-4 text-[#ff7629] font-[500]">
+            Explore Menu
+          </a>
+        </div>
+  
+        <div class="w-[15rem] flex flex-col justify-center items-center border-[3px] py-8 px-7 rounded-xl border-[#cec9c9]">
+          <img src="images/card4img.svg" alt="">
+          <h4 class=" mt-5 text-[20px] font-[500]">
+            Desserts
+          </h4>
+          <p class="mt-4 text-[17px] text-[#676767] font-[500]">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam
+          </p>
+          <a href="#" class="mt-4 text-[#ff7629] font-[500]">
+            Explore Menu
+          </a>
+        </div>
+  
+  
+      </div>
+        
+      <!-- buttons -->
+      <div class="flex gap-6 mt-10">
+        <a href="#">  
+          <div class=" py-2 px-6 rounded-full bg-[#ff7629] font-[500] text-[16px] text-white">
+            Order Online
+          </div>
+        </a>
+        <a href="#"  class="flex justify-center items-center">
+          <div class="py-2 px-6 rounded-full border border-slate-300 font-[500] text-[16px]">
+            Book a Table
+          </div>
+        </a>
+        
+      </div>
+    </div>
+
+    <!-- section-4 -->
+
+    <div class="bg-[#FFF9F3] pt-32 p-10 md:pl-40 pb-[220px] flex flex-col md:flex-row">
+
+      <!-- left-section -->
+      <div class=" w-full md:w-[50%] relative">
+
+        <img src="images/about-us-img.jpeg" alt="" class="rounded-[28px] w-[30rem]">
+        
+        <div class="md:w-[65%] bg-white md:absolute md:top-[60%] md:right-20 px-12 py-12 rounded-[20px]">
+          
+          <h4 class="font-[500] text-[22px]">
+            Come and visit us
+          </h4>
+          <br>
+          <div class=" w-[60%] flex flex-col gap-4">
+            <div class="flex gap-5">
+              <img src="images/location-icon.svg"></img>
+              <p class="font-[500] text-[#8D8D8D] text-[16px]">
+                837 W. Marshall Lane Marshaltown, IA 50158, Los Angeles
+              </p>
+            </div>
+            <div class="flex gap-5">
+              <img src="images/phone-icon.svg"></img>
+              <p class="font-[500] text-[#8D8D8D] text-[16px]">
+                (414) 857 - 0107              
+              </p>
+            </div>
+            <div class="flex gap-5">
+              <img src="images/mail-icon.svg"></img>
+              <p class="font-[500] text-[#8D8D8D] text-[16px]">
+                losangeles@restaurantex.com
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- right-section -->
+
+      <div class=" w-[90%] md:w-[40%] md:pl-[30px] flex flex-col justify-center">
+        <h3 class="font-[500] text-[36px] md:text-[30px] mt-10">
+          About us
+        </h3>
+        <br>
+        <p class=" text-[#8D8D8D] font-[500]">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam vitae velit bibendum elementum eget non vivamus volutpat odio cras vestibulum purus aliquam.
+        </p>
+        <br>
+        <p class=" text-[#8D8D8D] font-[500]">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper odio egestas id pulvinar consectetur elit tortor non hac pellentesque lacus donec accumsan quisque ultricies adipiscing mauris tortor cras est eu accumsan mauris.
+        </p>
+
+        <!-- buttons -->
+        <div class=" gap-3 md:gap-7 flex mt-10">
+          <!-- buttons -->
+          <a href="#"  class="flex justify-center items-center relative">
+            <div class=" py-2 px-6 rounded-3xl border border-slate-300 font-[500] text-[16px] bg-white">
+              About us
+            </div>
+          </a>
+          <a href="#">  
+            <div class=" absolute py-2 px-6 rounded-3xl bg-[#ff7629] font-[500] text-[16px] text-white">
+              Join our team
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-5 -->
+
+    <div class="mx:auto w-full overflow-x-hidden my-36 flex flex-col justify-center items-center ">
+
+      <h3 class="text-[40px] md:text-[34px] font-[600] ]">
+        Browse our menu
+      </h3>
+
+      <p class="mt-4 text-[#727272] text-[18px] md:text-[15px] font-[500] md:w-[45%] w-[80%] ">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam vitae velit bibendum elementum.
+      </p>
+
+      <!-- cards -->
+      
+      <div class="xl:grid grid-rows-2 grid-cols-4 md:w-[70%] gap-x-5 gap-y-20 mt-20 flex flex-wrap justify-center">
+        
+        <div class="flex flex-col items-center justify-center relative w-[16rem]">
+          
+          <img src="images/section-5-img-1.jpeg" alt="" class="rounded-[30px] ">
+          <div class="absolute z-10 top-3 right-2 bg-white py-2 px-3 rounded-[13px] font-[600]">
+            $10.99 USD
+          </div>
+          <h3 class="mt-3 font-[600] text-[24px]">
+            Classic Burger
+          </h3>
+          <p class="text-[#727272] font-[500] text-[16px] w-[95%] mt-2">
+            Lorem ipsum dolor sit amet dolor consectetur adipiscing elit
+          </p>
+
+        </div>
+
+        <div class="flex flex-col items-center justify-center relative w-[16rem]">
+
+          <img src="images/section-5-img-2.jpeg" alt="" class="rounded-[30px]">
+          <div class="absolute z-10 top-3 right-2 bg-white py-2 px-3 rounded-[13px] font-[600]">
+            $6.99 USD
+          </div>
+          <h3 class="mt-3 font-[600] text-[24px]">
+            Choclate Milkshake
+          </h3>
+          <p class="text-[#727272] font-[500] text-[16px] w-[95%] mt-2">
+            Lorem ipsum dolor sit amet dolor consectetur adipiscing elit
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center relative w-[16rem]">
+          <img src="images/section-5-img-3.jpeg" alt="" class="rounded-[30px]">
+          <div class="absolute z-10 top-3 right-2 bg-white py-2 px-3 rounded-[13px] font-[600]">
+            $5.99 USD
+          </div>
+          <h3 class="mt-3 font-[600] text-[24px]">
+            Classic Fries
+          </h3>
+          <p class="text-[#727272] font-[500] text-[16px] w-[95%] mt-2">
+            Lorem ipsum dolor sit amet dolor consectetur adipiscing elit
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center relative w-[16rem]">
+          <img src="images/section-5-img-4.jpeg" alt="" class="rounded-[30px] ">
+          <div class="absolute z-10 top-3 right-2 bg-white py-2 px-3 rounded-[13px] font-[600]">
+            $8.99 USD
+          </div>
+          <h3 class="mt-3 font-[600] text-[24px]">
+            Pancakes
+          </h3>
+          <p class="text-[#727272] font-[500] text-[16px] w-[95%] mt-2">
+            Lorem ipsum dolor sit amet dolor consectetur adipiscing elit
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center relative w-[16rem]">
+          <img src="images/section-5-img-5.jpeg" alt="" class="rounded-[30px] ">
+          <div class="absolute z-10 top-3 right-2 bg-white py-2 px-3 rounded-[13px] font-[600]">
+            $3.99 USD
+          </div>
+          <h3 class="mt-3 font-[600] text-[24px]">
+            Ice Cream
+          </h3>
+          <p class="text-[#727272] font-[500] text-[16px] w-[95%] mt-2">
+            Lorem ipsum dolor sit amet dolor consectetur adipiscing elit
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center relative w-[16rem]">
+          <img src="images/section-5-img-6.jpeg" alt="" class="rounded-[30px]">
+          <div class="absolute z-10 top-3 right-2 bg-white py-2 px-3 rounded-[13px] font-[600]">
+            $9.99 USD
+          </div>
+          <h3 class="mt-3 font-[600] text-[24px]">
+            Chicken Burger
+          </h3>
+          <p class="text-[#727272] font-[500] text-[16px] w-[95%] mt-2">
+            Lorem ipsum dolor sit amet dolor consectetur adipiscing elit
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center relative w-[16rem]">
+          <img src="images/section-5-img-7.jpeg" alt="" class="rounded-[30px] ">
+          <div class="absolute z-10 top-3 right-2 bg-white py-2 px-3 rounded-[13px] font-[600]">
+            $6.99 USD
+          </div>
+          <h3 class="mt-3 font-[600] text-[24px]">
+            Egg toast
+          </h3>
+          <p class="text-[#727272] font-[500] text-[16px] w-[95%] mt-2">
+            Lorem ipsum dolor sit amet dolor consectetur adipiscing elit
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center relative  w-[16rem]">
+          <img src="images/section-5-img-8.jpeg" alt="" class="rounded-[30px]">
+          <div class="absolute z-10 top-3 right-2 bg-white py-2 px-3 rounded-[13px] font-[600]">
+            $1.99 USD
+          </div>
+          <h3 class="mt-3 font-[600] text-[24px]">
+            Regular Soda
+          </h3>
+          <p class="text-[#727272] font-[500] text-[16px] w-[95%] mt-2">
+            Lorem ipsum dolor sit amet dolor consectetur adipiscing elit
+          </p>
+        </div>
+      </div>
+      
+
+      <!-- buttons -->
+      <div class="flex gap-6 mt-10">
+        <a href="#">  
+          <div class=" py-2 px-6 rounded-full bg-[#ff7629] font-[500] text-[16px] text-white">
+            Order Online
+          </div>
+        </a>
+        <a href="#"  class="flex justify-center items-center">
+          <div class="py-2 px-6 rounded-full border border-slate-300 font-[500] text-[16px]">
+            Book a Table
+          </div>
+        </a>
+              
+      </div>
+    </div>
+
+    <!-- section-6 -->
+
+    <div class="bg-[#FF7629] flex h-full">
+
+      <!-- left-section -->
+      <div class="xl:w-[45%] w-full flex flex-col items-center my-44 md:my-[300px] px-8 md:px-[130px]">
+        
+        <div class="text-white font-[600] text-[40px] leading-[3rem] w-full">
+          <h3>
+            Taste the most
+          </h3>
+          <h3>
+            delicious burger in Los Angeles, CA
+          </h3>
+        </div>
+
+        <p class="text-white font-[500]  mt-8">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam vitae velit bibendum elementum. Order online
+        </p>
+
+        <!-- button -->
+        <div class="mt-12 flex gap-5 w-full">
+          <a href="#">
+            <div class="py-2 px-6 rounded-full bg-white font-[500] text-[16px]">
+              Order Online
+            </div>
+          </a>
+          <a href="#">  
+            <div class=" py-2 px-6 rounded-full border font-[500] text-[16px] text-white">
+              Reservate
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- right-section -->
+      <div class=" hidden md:block w-[55%] ">
+        <img src="images/section-6-img.jpeg" alt="" class="h-full w-full">
+      </div>
+    </div>
+
+    <!-- section-7 -->
+    <div class="flex flex-col justify-center items-center mt-48">
+
+      <h3 class="font-[600] text-[34px]">
+        What our clients say
+      </h3>
+      <p class="text-[16px] font-[500] text-[#727272] mt-4 w-[50%]">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam vitae velit bibendum elementum.
+      </p>
+
+      <!-- content -->
+      <div class="flex md:w-[60%] justify-center items-center m-4 gap-4 md:gap-10 overflow-x-hidden">
+
+        <img src="images/left-arrow-svgrepo-com.svg" alt="" class="w-[4rem] bg-[#FF7629] rounded-full p-1">
+
+        <div class="w-[20rem] md:w-[46rem] border-[3px] border-slate-300 rounded-3xl py-10 px-6 md:px-14">
+          <div class="flex w-[1.2rem] md:w-[2rem] gap-2">
+            <img src="images/star-svgrepo-com.svg" alt="">
+            <img src="images/star-svgrepo-com.svg" alt="">
+            <img src="images/star-svgrepo-com.svg" alt="">
+            <img src="images/star-svgrepo-com.svg" alt="">
+            <img src="images/star-svgrepo-com.svg" alt="">
+          </div>
+          <h4 class="text-[27px] font-[500] mt-3">
+            "You must try these burgers"
+          </h4>
+          <p class="text-[15px] font-[500] text-[#727272] my-2">
+            Lorem ipsum dolor sit amet consectetur adipiscing elitilmim semper adipiscing massa gravida nisi cras enim quis nibholm varius amet gravida ut facilisis neque egestas.
+          </p>
+          <div class="flex gap-6 mt-5">
+            <img src="images/face1.jpg" alt="" class="w-[3rem] rounded-full h-[3rem]">
+            <div>
+              <p class="font-[500] text-[17px]"> Matt Cannon  </p>
+              <p class="-mt-1 text-[#595858] text-[16px] font-[500]"> San Diego, CA</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="images/right-arrow-svgrepo-com.svg" alt="" class="w-[4rem] bg-[#FF7629] rounded-full p-1">
+
+      </div>
+
+      <!-- button -->
+      <div class="my-16 flex gap-5 w-full justify-center">
+        <a href="#">
+          <div class="py-2 px-6 rounded-full bg-[#FF7629] font-[500] text-[16px] text-white">
+            Order Online
+          </div>
+        </a>
+        <a href="#">  
+          <div class=" py-2 px-6 rounded-full border-[2px] font-[500] text-[16px] text-black">
+            Book a table
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- section-8 -->
+
+    <div class="bg-[#FFF9F3] flex flex-col justify-center items-center mt-16 overflow-x-hidden">
+
+      <div class="flex justify-between w-[85%] mt-40">
+        <h3 class="text-[33px] font-[600] ">
+          Our articles
+        </h3>
+        <button class="bg-white rounded-full py-2 px-3 text-[16px]">
+          <a href="#">Browse our articles</a>
+        </button>
+      </div>
+
+      
+      <div class="flex flex-wrap flex-col xl:flex-row xl:flex-nowrap items-center xl:w-[85%] gap-[80px] mt-10">
+        <!-- left-card -->
+        <div class="flex flex-col w-[80%] md:w-[50%] bg-white pb-12 rounded-3xl md:mb-28">
+          <img src="images/section-8-left-img.jpeg" alt="" class=" rounded-t-3xl xl:h-[32rem]">
+          <div class="py-7 px-5">
+            <p class="text-[16px] text-[#737373]">
+              September 1, 2022
+            </p>
+            <h3 class="text-[26px] font-[700] mt-1">
+              The secret trick to prepare a perfect burger
+            </h3>
+            <p class="text-[#8F8FAC] text-[15px] font-[500] mt-2">
+              Lorem ipsum dolor sit amet consectetur adipiscing elitilmim semper adipisc
+            </p>
+          </div>
+        </div>
+        
+        <!-- right-card -->
+        <div class="md:grid grid-rows-2 grid-cols-2 md:w-[50%] md:pr-6 flex flex-wrap justify-center gap-10 md:mb-28 ">
+
+          <div class="flex flex-col bg-white rounded-3xl w-[13rem] h-[20rem] xl:w-full">
+
+            <img src="images/section-8-right-img1.jpeg" alt="" class="rounded-t-3xl">
+            <div class="flex flex-col mt-4 p-4">
+              <p class="text-[16px] text-[#737373]">
+                September 1, 2022
+              </p>
+              <h4 class="text-[16px] font-[500]">
+                The secret trick to prepare a perfect burger
+              </h4>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col bg-white rounded-3xl w-[13rem] h-[20rem] xl:w-full">
+
+            <img src="images/section-8-right-img2.jpeg" alt="" class="rounded-t-3xl">
+            <div class="flex flex-col mt-4 p-4">
+              <p class="text-[16px] text-[#737373]">
+                September 1, 2022
+              </p>
+              <h4 class="text-[16px] font-[500]">
+                The secret trick to prepare a perfect burger
+              </h4>
+            </div>
+
+          </div>
+          
+          <div class="flex flex-col bg-white rounded-3xl w-[13rem] h-[20rem] xl:w-full">
+
+            <img src="images/section-8-right-img3.jpeg" alt="" class="rounded-t-3xl">
+            <div class="flex flex-col mt-4 p-4">
+              <p class="text-[16px] text-[#737373]">
+                September 1, 2022
+              </p>
+              <h4 class="text-[16px] font-[500]">
+                The secret trick to prepare a perfect burger
+              </h4>
+            </div>
+
+          </div>
+          
+          <div class="flex flex-col bg-white rounded-3xl w-[13rem] h-[20rem] xl:w-full">
+
+            <img src="images/section-8-right-img4.jpeg" alt="" class="rounded-t-3xl">
+            <div class="flex flex-col mt-4 p-4">
+              <p class="text-[16px] text-[#737373]">
+                September 1, 2022
+              </p>
+              <h4 class="text-[16px] font-[500]">
+                The secret trick to prepare a perfect burger
+              </h4>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- section-9 -->
+
+    <div class="flex md:h-[960px] flex-col md:flex-row">
+
+      <!-- left-section -->
+      <div class="flex flex-col md:w-[55%] justify-center items-center relative">
+
+        <div class="w-[48%] py-56 top-[50%] right-[50%] -ml-24">
+          <h3 class=" text-[36px] font-[700]">
+            Book your table now
+          </h3>
+          <p class="mt-5 text-[#8D8D8D] font-[500]">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam vitae velit bibendum elementum.
+          </p>
+          <div class="flex flex-col gap-4 mt-5">
+            <div class="flex gap-5">
+              <img src="images/location-icon.svg"></img>
+              <p class="font-[500] text-[#8D8D8D] text-[16px]">
+                837 W. Marshall Lane Marshaltown, IA 50158, Los Angeles
+              </p>
+            </div>
+            <div class="flex gap-5">
+              <img src="images/phone-icon.svg"></img>
+              <p class="font-[500] text-[#8D8D8D] text-[16px]">
+                (414) 857 - 0107              
+              </p>
+            </div>
+            <div class="flex gap-5">
+              <img src="images/mail-icon.svg"></img>
+              <p class="font-[500] text-[#8D8D8D] text-[16px]">
+                losangeles@restaurantex.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- right-section -->
+
+      <div class="bg-[#FF7629] md:w-[45%] flex justify-center md:relative">
+
+        <form action="#" class=" w-[90%] md:w-[75%]  px-10 py-10 bg-white border-2 border-slate-300 rounded-3xl md:absolute md:right-[40%] md:top-[10%]">
+          <div class="w-[48%] inline-block">
+            <label for="name" class="text-[18px] font-[500]">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="John Carter" class="mt-4 rounded-3xl px-4 py-2 border w-[95%]">
+          </div>
+          <div class="w-[48%] inline-block">
+            <label for="email" class="text-[18px] font-[500]">Email Address</label><br>
+            <input type="text" id="email" name="email" placeholder="example@email.com" class="mt-4 rounded-3xl px-4 py-2 border w-[95%]">
+          </div>
+          <div class="w-[48%] inline-block mt-6">
+            <label for="phone" class="text-[18px] font-[500]">Phone</label><br>
+            <input type="text" id="phone" name="phone" placeholder="(123) 456 - 789" class="mt-4 rounded-3xl px-4 py-2 border w-[95%]">
+          </div>
+          <div class="w-[48%] inline-block mt-6">
+            <label for="location" class="text-[18px] font-[500]">Location</label><br>
+            <input type="text" id="location" name="location" placeholder="Ex. Lost Angeles" class="mt-4 rounded-3xl px-4 py-2 border w-[95%]">
+          </div>
+          <div class="w-[48%] inline-block mt-6">
+            <label for="date" class="text-[18px] font-[500]">Date</label><br>
+            <input type="text" id="date" name="date" placeholder="Day and Month" class="mt-4 rounded-3xl px-4 py-2 border w-[95%]">
+          </div>
+          <div class="w-[48%] inline-block mt-6">
+            <label for="schedule" class="text-[18px] font-[500]">Schedule</label><br>
+            <input type="text" id="schedule" name="schedule" placeholder="Ex. 2:00PM" class="mt-4 rounded-3xl px-4 py-2 border w-[95%]">
+          </div>
+          <div class="w-[70%] inline-block mt-6 mx-auto">
+            <label for="text" class="text-[18px] font-[500]">Add a Note</label><br>
+            <textarea name="note" id="text" cols="30" rows="8" placeholder="Do you have any note for us?" class="mt-4 rounded-3xl px-4 py-2 border flex justify-center">
+              
+            </textarea>
+          </div>
+          <div class="mt-5 flex w-full">
+            <a href="#">
+              <div class="py-2 px-7 rounded-full bg-[#FF7629] font-[500] text-[16px] text-white">
+                Book a Table
+              </div>
+            </a>             
+          </div>
+        </form>
+        
+      </div>
+
+
+    </div>
+
+    <!-- section-10 -->
+
+    <div class="bg-[#FFF9F3] flex flex-col justify-center">
+      <div class="px-24  flex flex-col md:flex-row md:justify-between items-center">
+        <h3 class="text-[32px] font-[600] mt-36">
+          Follow us on Instagram
+        </h3>
+        <button class="mt-6 md:mt-36">
+          <a href="#">
+            <div class="py-3 px-8 rounded-full bg-[#FF7629] font-[500] text-[16px] text-white text-[18px]">
+              Follow us
+            </div>
+          </a>   
+        </button>
+      </div>
+
+      <div class="flex justify-center items-center flex-col md:flex-row  mt-10 mx-auto mb-48 gap-8">
+        <div class="flex flex-col md:flex-row gap-8 justify-center">
+          <img src="./images/section-10-img-1.jpeg" alt="" class="w-[18rem] h-[18rem] rounded-3xl">
+          <img src="./images/section-10-img-2.jpeg" alt=""  class="w-[18rem] h-[18rem] rounded-3xl">
+        </div>
+        <div class="grid grid-rows-2 grid-cols-2 gap-6">
+          <img src="./images/section-10-img-3.jpeg" alt="" class="w-[9rem] h-[9rem] rounded-3xl">
+          <img src="./images/section-10-img-4.jpeg" alt="" class="w-[9rem] h-[9rem] rounded-3xl">
+          <img src="./images/section-10-img-5.jpeg" alt="" class="w-[9rem] h-[9rem] rounded-3xl">
+          <img src="./images/section-10-img-6.jpeg" alt="" class="w-[9rem] h-[9rem] rounded-3xl">
+        </div>
+      </div>
+    </div>
+
+    <!-- section-11 -->
+    <div class="w-full mt-20 flex flex-col md:flex-row justify-center gap-10 md:gap-[10rem] px-14">
+      <div class="md:w-[30%] ">
+        <a href="#">
+          <img src="images/logo-restaurante-x.svg" alt="">
+        </a>
+        <p class="mt-3 text-[#6A6868] font-[500] ">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam vitae velit bibendum elementum.
+        </p>
+        <div class="flex w-[2rem] gap-2 mt-3">
+          <img src="images/star-svgrepo-com.svg" alt="">
+          <img src="images/star-svgrepo-com.svg" alt="">
+          <img src="images/star-svgrepo-com.svg" alt="">
+          <img src="images/star-svgrepo-com.svg" alt="">
+          <img src="images/star-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-[20px] font-[500]">
+            Pages
+          </h3>
+          <div class="flex flex-col mt-4 gap-y-2">
+            <a href="#" class="text-[#878A88] font-[500]">Home</a>
+            <a href="#" class="text-[#878A88] font-[500]">Contact</a>
+            <a href="#" class="text-[#878A88] font-[500]">Blogpost</a>
+            <a href="#" class="text-[#878A88] font-[500]">Blog</a>
+            <a href="#" class="text-[#878A88] font-[500]">Menu</a>
+            <a href="#" class="text-[#878A88] font-[500]">About</a>
+            <a href="#" class="text-[#878A88] font-[500]">Delivery</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-[20px] font-[500]">Utility</h3>
+          <div class="flex flex-col mt-4 gap-y-2">
+            <a href="#" class="text-[#878A88] font-[500]">Home</a>
+            <a href="#" class="text-[#878A88] font-[500]">About</a>
+            <a href="#" class="text-[#878A88] font-[500]">Menu</a>
+            <a href="#" class="text-[#878A88] font-[500]">Blog</a>
+            <a href="#" class="text-[#878A88] font-[500]">Blogpost</a>
+            <a href="#" class="text-[#878A88] font-[500]">Contact</a>
+            <a href="#" class="text-[#878A88] font-[500]">Delivery</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-28">
+        <h3 class="text-[20px] font-[500]">
+          Follow us on Instagram
+        </h3>
+        <div class="grid grid-rows-2 grid-cols-2 gap-6 mt-6">
+          <img src="./images/section-10-img-3.jpeg" alt="" class="w-[9rem] h-[9rem] rounded-3xl">
+          <img src="./images/section-10-img-4.jpeg" alt="" class="w-[9rem] h-[9rem] rounded-3xl">
+          <img src="./images/section-10-img-5.jpeg" alt="" class="w-[9rem] h-[9rem] rounded-3xl">
+          <img src="./images/section-10-img-6.jpeg" alt="" class="w-[9rem] h-[9rem] rounded-3xl">
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  </body>
+</html>
